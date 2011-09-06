@@ -59,17 +59,4 @@ ROOT_URLCONF = 'urls'
 ACCOUNT_ACTIVATION_DAYS = 3
 AUTH_PROFILE_MODULE = 'accounts.UserProfile'
 
-#EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_HOST_USER = 'cs198.juatsemilla@gmail.com'
-EMAIL_HOST_PASSWORD = 'jssolamo'
-EMAIL_USE_TLS = True
-SERVER_EMAIL = 'cs198.juatsemilla@gmail.com'
-SEND_BROKEN_LINK_EMAILS = 'True'
-
-smtp_host='smtp.gmail.com'
-smtp_port=587
-smtp_user='cs198.juatsemilla@gmail.com'
-smtp_password='jssolamo'
 
