@@ -1,0 +1,17 @@
+{% extends 'registration/base.html' %}
+
+{% block title  %} Login {% endblock %}
+{% block header %}{% endblock %}
+
+{% block content %}
+    <form class='sign-up' action="{% url auth_login %}" method="post"> {% csrf_token %}
+    {% for field in form %}
+    <div class="fieldWrapper">
+        {{ field.errors }}
+        {{ field.label_tag}}{{ field }}
+    </div>
+    {% endfor %}
+    <div class='sign-up-button' ><input type='submit' name="" value="Submit" /></div>
+    <input type="hidden" name="next" value="{{ next }}" />
+    </form>
+{% endblock %}

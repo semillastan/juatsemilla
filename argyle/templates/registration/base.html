@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <article>
+        <header>
+          <h2>{% block header %}{% endblock %}</h2>
+        </header>
+        
+        <section>
+        {% block content %}
+        {% endblock %}
+        </section>
+    
+    </article>
+{% endblock %}

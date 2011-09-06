@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}Test{% endblock %}
+
+{% block content %}
+
+    <h1>Test page</h1>
+    
+    <form method="post" action="{% url test %}">
+        Recipient:<input type="text" id="recipient" name="recipient"></input><br />
+        Subject:<input type="text" id="subject" name="subject"></input><br />
+        Body:<input type="text" id="body" name="body"></input><br />
+        <input type="submit" value="Send Email"></input><br />
+    </form>
+
+{% endblock %}

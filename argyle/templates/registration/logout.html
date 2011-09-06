@@ -1,0 +1,19 @@
+{% extends 'registration/base.html' %}
+
+{% block title  %} Logout {% endblock %}
+{% block content %}
+    	<div id="header">
+			<img src="{{ MEDIA_URL }}images/backscratch-logo.png" />
+		</div>
+		<div id="two-panel">
+			<div id="left-panel">
+				<img src="{{ MEDIA_URL }}images/image.jpg" />
+			</div>
+			<div id="right-panel">
+                <div id="home-textbox">
+                <p>You have been successfully logged out.</p>
+                <a href="{% url auth_login %}"> Login Here.</a>
+                </div>
+            </div>
+	    </div>
+{% endblock %}

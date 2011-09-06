@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}Welcome to Sarimanok!{% endblock %}
+
+{% block content %}
+
+    <h1>Welcome to Sarimanok!</h1>
+    <a href="{% url login %}">Login</a> <br />
+    <a href="{% url register %}">Register</a> <br />
+    <a href="{% url test %}">Test</a>
+{% endblock %}
