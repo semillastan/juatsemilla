@@ -8,7 +8,7 @@ YEARS = range(year-18, year-100, -1) # only let people aged 18-100 register. :D
 
 class LoginForm(forms.Form):
     username = forms.CharField(max_length=100, required=True)
-    password = forms.CharField(max_length=100, required=True)
+    password = forms.CharField(widget=forms.PasswordInput, max_length=100, required=True)
     
 class RegistrationForm(forms.ModelForm):
     first_name = forms.CharField(max_length=100)

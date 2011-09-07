@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}Activate{% endblock %}
+
+{% block content %}
+
+    <h1>Activate page</h1>
+    <h4>You need to have an activation code sent to your registered email. Please check your email.</h4>
+    <a href="{% url resend-code user.username %}">Resend Activation Code</a>
+    <form method="post" action="{% url activate %}">
+        {% if user %}
+            <input type="hidden" name="username" value="{{ user.username }}" id="id_username" />
+            <input type="hidden" name="password" value="{{ user.password }}" id="id_password" />
+        {% endif %}
+        <input type="text" name="activation_code" id="id_code" /> <br />
+        <input type="submit" value="activate" />
+    </form>
+{% endblock %}

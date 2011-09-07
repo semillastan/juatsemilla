@@ -7,10 +7,10 @@
     lang="{% firstof LANGUAGE_CODE 'en' %}">
   <head>
     <title>{% block title %}{% endblock %}</title>
-
+    <link href="/media/css/main.css" rel="stylesheet" type="text/css" />
     {% block css %}
     {% endblock %}
-
+    
     {% block js %}
     {% endblock %}
 
@@ -18,31 +18,33 @@
   </head>
 
   <body>
-    <div class="columns">
-      <div id="content" class="column">
-        {% block content-header %}
-          {% if error %}<div class="error">{{ error }}</div>{% endif %}
-          {% if info %}<div class="info">{{ info }}</div>{% endif %}
-          {% if messages %}
-            {% for message in messages %}
-              <div class="info">{{ message }}</div>
-            {% endfor %}
-          {% endif %}
-        {% endblock %}
-
+    <div id="navigation">
+        <div id="links">
+            <ul>
+                <li><a href="{% url register %}">Register</a></li>
+                <li><a href="{% url login %}">Login</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="body-container">
         {% block content %}{% endblock %}
-      </div>
 
-      <div id="sidebar" class="column">
-        {% block sidebar %}
-        {% endblock %}
-      </div>
+        <div id="sidebar">
+            {% block sidebar %}{% endblock %}
+        </div>
     </div>
-
-    <div id="footer">
-      
-    </div>
-
-
+    <div style="clear:both"></div>
+    <footer>
+        <div id="links">
+        	<ul>
+            	<li> <a href="#"> About </a></li>
+                <li> <a href="#"> Developers </a></li>
+                <li> <a href="#"> Privacy </a></li>
+                <li> <a href="#"> Terms of Services </a></li>
+                <li> <a href="#"> Help </a></li>
+                <li> <a href="#"> &#169; 2011 Sarimanok </a></li>
+            </ul>
+        </div>
+    </footer>
   </body>
 </html>

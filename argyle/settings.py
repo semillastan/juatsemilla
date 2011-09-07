@@ -59,4 +59,14 @@ ROOT_URLCONF = 'urls'
 ACCOUNT_ACTIVATION_DAYS = 3
 AUTH_PROFILE_MODULE = 'accounts.UserProfile'
 
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'cs198.juatsemilla@gmail.com'
+EMAIL_HOST_PASSWORD = 'jssolamo'
+EMAIL_USE_TLS = True
+SERVER_EMAIL = 'cs198.juatsemilla@gmail.com'
+SEND_BROKEN_LINK_EMAILS = 'True'
 
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(os.path.dirname(__file__), 'media')

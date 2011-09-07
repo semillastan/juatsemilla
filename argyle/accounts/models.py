@@ -15,7 +15,10 @@ class UserProfile(models.Model):
     class Meta:
         verbose_name = "User Profile"
         verbose_name_plural = "User Profiles"
-        
+    
+    def __unicode__(self):
+        return self.user.username
+    
     @property
     def fullname(self):
         return self.user.get_full_name()

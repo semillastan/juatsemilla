@@ -1,5 +1,9 @@
 {% extends 'accounts/base.html' %}
 
 {% block content %}
-    This is your profile page.
+    <h1>This is your profile page.</h1>
+    
+    {{ data }}
+    <br />
+    <a href="{% url logout %}">logout</a>
 {% endblock %}

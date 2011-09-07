@@ -13,5 +13,6 @@ urlpatterns = patterns('',
      {'template': 'home.html'}),
     (r'^admin/', include(admin.site.urls)),
     (r'^accounts/', include('accounts.urls')),
+    (r'^core/', include('core.urls')),
     url(r'^test/$', test, name='test'),
 )

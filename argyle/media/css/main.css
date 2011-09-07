@@ -1,0 +1,174 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: Ebrima;
+	src: url('/fonts/ebrima.ttf');
+}
+
+@font-face {
+	font-family: Ebrima-Bold;
+	src: url('/fonts/ebrimabd.ttf');
+}
+
+b, strong {
+    font-family: Ebrima-Bold;
+}
+
+#spacer1 {
+    height: 10px;
+    margin: 0;
+}
+
+#spacer15 {
+    height: 15px;
+    margin: 0;
+}
+
+#spacer2 {
+    height: 30px;
+}
+
+img {
+    border: 0px;
+}
+
+body, html{
+	text-align: center;
+	font-family: Ebrima;
+	margin: 0; 
+	padding: 10;
+	height: 100%;
+    background-color: #fcfcfc;
+    color: #FFF;
+}
+
+#body-container {
+	min-height: 80%;
+	width: 960px;
+	margin: 0 auto;
+    padding: 50px;
+    background-color: #fff;
+    border-right: 1px solid #DEDEDD;
+    border-left: 1px solid #DEDEDD;
+    color: #292929;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="password"] {
+    border: 1px solid #DEDEDD;
+    width: 200px;
+    height: 20px;
+}
+
+input[type="submit"] {
+    border: 1px solid #DEDEDD;
+    width: 70px;
+    height: 20px;
+    margin: 7px;
+}
+
+#navigation {
+    height: 50px;
+    width: 100%;
+    background-color: #000;
+    position: fixed;  
+    top: 0;
+    left: 0;
+    font-family: Ebrima;
+}
+
+#navigation #links {
+	width: 90%;
+	height: 30px;
+	margin: 0 auto;
+	padding: 0;
+    text-align: right;
+}
+
+#navigation #links ul {
+	width: 100%;
+	height: 30px;
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+	text-align: right;
+}
+
+#navigation #links li {
+	float: right;
+	list-style: none;
+	text-align: right;
+	margin:0;
+}
+
+#navigation #links li a {
+	display: block;	
+	height: 30px;
+	border: none;
+	margin: 0;
+	text-decoration: none;
+	color: #ffde00;
+	font-size: 15px;
+	line-height: 30px;
+	padding: 10px 10px;
+    vertical-align: middle;
+}
+
+#navigation #links li a:hover {
+	color: #FFF;
+}
+
+footer {
+	width: 100%;
+	margin: 0 auto 0 auto;
+	height: 15%;
+	text-align: center;
+	background-color: #000;
+}
+
+footer #links {
+	width: 960px;
+	height: 30px;
+	margin: 0 auto;
+	padding:0;
+}
+
+footer #links ul {
+	width: 440px;
+	height: 30px;
+	margin: 0 auto;
+	padding:0;
+	list-style:none;
+	text-align: center;
+}
+
+footer #links li {
+	float:left;
+	list-style:none;
+	text-align:center;
+	margin:0;
+}
+
+footer #links li a {
+	display:block;	
+	height:16px;
+	border:none;
+	margin:0;
+	text-decoration:none;
+	color: #ffde00;
+	font-size:11px;
+	line-height:16px;
+	padding:10px 10px;
+}
+
+footer #links li a:hover {
+	color:#fff;
+}
+
+#home {
+    width: 100%;
+    padding-top: 100px;
+    text-align: center;
+}

@@ -21,5 +21,12 @@ handlers:
   static_dir: django/contrib/admin/media
   expiration: '0'
 
+- url: /media
+  static_dir: media
+
+- url: /fonts
+  static_dir: media/fonts
+  expiration: '0'
+
 - url: /.*
   script: djangoappengine/main/main.py

@@ -10,11 +10,17 @@ setup_environ(settings)
 from django.conf import settings
 settings._target = None
 
+
+
 import django.core.handlers.wsgi
 import django.core.signals
 import django.db
 import django.dispatch.dispatcher
 
+smtp_host='smtp.gmail.com'
+smtp_port=587
+smtp_user='cs198.juatsemilla@gmail.com'
+smtp_password='jssolamo'
 
 # Unregister the rollback event handler.
 django.dispatch.dispatcher.disconnect(
